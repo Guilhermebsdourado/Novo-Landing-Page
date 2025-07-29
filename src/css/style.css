@@ -1,4 +1,4 @@
-.cabecalho .logo .imagem {
+.logo .imagem {
     width: 100px;
 }
 
@@ -12,13 +12,27 @@
     flex-wrap: wrap;
 }
 
-.cabecalho .logo {
+@media(max-width: 624px){
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .cabecalho .logo{
+        margin-bottom: 30px;
+    }
+
+    .cabecalho .menu .item a {
+        font-size: calc(0.6e, + 1vw);
+    }
+}
+
+.logo {
     display: flex;
     align-items: center;
     text-transform: uppercase;
 }
 
-.cabecalho .titulo {
+.logo .titulo {
     margin-left: 7px;
     font-size: 17px;
     transition: 0.2s ease-in-out;
@@ -56,6 +70,8 @@
     height: 700px;
     position: relative;
 }
+
+
 
 .conteudo-principal .paineis .imagem-painel {
     min-width: 100%;
@@ -110,4 +126,81 @@
 .conteudo-principal .paineis .seta.btn-avancar {
     right: 20px;
 }
+
 /* PAINÉL */
+
+.quem-somos {
+    background-color: #2941AB;
+}
+
+.quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.quem-somos .conteudo .informacoes{
+    width: 48%;
+}
+
+.quem-somos .conteudo .imagem {
+    width: 60%;
+}
+
+.quem-somos .conteudo .informacoes .titulo{
+    font-size: 50px;
+    color: #1ED760;
+    margin-bottom: 20px;
+}
+
+.quem-somos .conteudo .informacoes .texto {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 400;
+}
+
+/*RODAPÉ*/
+
+.rodape {
+    padding: 80px 0 20px 0;
+}
+
+.rodape .navegacao {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .redes-sociais{
+    display: flex;
+}
+
+.rodape .redes-sociais a{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    padding: 15px;
+    width: 65px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover{
+    background-color: #1ED760;
+
+}
+
+.rodape .navegacao .logo .imagem {
+    width: 100px;
+}
+
+.rodape .copyright{
+    margin-top: 70px; 
+    text-align: center;
+}
