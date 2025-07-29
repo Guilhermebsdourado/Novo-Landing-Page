@@ -1,3 +1,5 @@
+/* LOGO */
+
 .logo .imagem {
     width: 100px;
 }
@@ -39,7 +41,7 @@
     font-weight: 800;
 }
 
-.cabecalho .titulo:hover {
+.logo .titulo:hover {
     color: #1Ed760;
 }
 
@@ -71,7 +73,11 @@
     position: relative;
 }
 
-
+@media(max-width: 900px){
+    .conteudo-principal .paineis{
+        height: 500px;
+    }
+}
 
 .conteudo-principal .paineis .imagem-painel {
     min-width: 100%;
@@ -139,8 +145,25 @@
     padding: 0 10%;
 }
 
+
 .quem-somos .conteudo .informacoes{
     width: 48%;
+}
+
+@media(max-width:1200px){
+    .quem-somos .conteudo{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 30px;
+    }
+
+        .quem-somos .conteudo .imagem{
+            display: none; 
+        }
+
+        .quem-somos .conteudo .informacoes{
+            width: 100%;
+        }
 }
 
 .quem-somos .conteudo .imagem {
@@ -203,4 +226,20 @@
 .rodape .copyright{
     margin-top: 70px; 
     text-align: center;
+}
+
+@media(max-width: 940px){
+    .rodape .navegacao {
+        justify-content: center;
+    }
+
+    .rodape .navegacao .logo {
+        margin-bottom: 30px;
+    }
+
+    .rodape .navegacao .logo,
+    .rodape .navegacao .redes-sociais{
+        width: 100%;
+        justify-content: center;
+    }
 }
